@@ -13,7 +13,7 @@ namespace Design_Patterns.Observer
 
         void IObserver.update(IObservable o)
         {
-            Console.WriteLine("Desktop Device Updated : " + o.ToString().Split('.').GetValue();
+            Console.WriteLine("Desktop Device Updated : " + o.ToString());
             if (o.GetType() == typeof(WeatherStation))
                 display(((WeatherStation)o).Temp);
         }
